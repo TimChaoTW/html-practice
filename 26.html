@@ -26,10 +26,16 @@
     .logo {
       width: 60px;
       height: 40px;
+      margin-left: 10px;
+    }
+
+    .logo a {
+      display: block;
+      /* height: 40px; */
     }
 
     .logo img {
-      vertical-align: middle;
+      display: block;
     }
 
     .menu_btn {
@@ -85,6 +91,43 @@
 
     #menu_control:checked~.header nav {
       left: 0;
+    }
+
+    @media screen and (min-width:768px) {
+      .menu_btn {
+        display: none;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        background-color: #282923;
+        align-items: center;
+      }
+
+      .logo a {
+        display: block;
+        /* height: 40px; */
+      }
+
+      .logo img {
+        vertical-align: top;
+      }
+
+      nav {
+        position: relative;
+        left: 0;
+        display: flex;
+        width: auto;
+        height: auto;
+        top: 0;
+        background-color: transparent;
+      }
+
+      nav a {
+        border-bottom: none;
+      }
+
     }
   </style>
 </head>
