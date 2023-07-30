@@ -151,16 +151,6 @@
         0px -8px 0px #aaa;
     }
 
-    nav {
-      width: 80%;
-      height: calc(100vh-50px);
-      background-color: #282923;
-      position: absolute;
-      top: 50px;
-      left: -100%;
-      transition: .5s;
-    }
-
     nav a {
       display: block;
       text-decoration: none;
@@ -171,6 +161,18 @@
 
     #menu_control:checked~.header nav {
       left: 0;
+    }
+
+    @media screen and (max-width:767px) {
+      nav {
+        width: 80%;
+        height: calc(100vh-50px);
+        background-color: #282923;
+        position: absolute;
+        top: 50px;
+        left: -100%;
+        transition: .5s;
+      }
     }
 
     @media screen and (min-width:768px) {
